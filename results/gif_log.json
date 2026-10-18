@@ -1,0 +1,11 @@
+{
+ "forward_substitution_hybrid.gif": 6.120323896408081,
+ "refinement_irregular.gif": 2.5973803997039795,
+ "timescale_gallery.gif": 0.7479031085968018,
+ "family_nu.gif": 5.290522575378418,
+ "accumulation_point.gif": 14.286235570907593,
+ "training_seconds": 0.06355094909667969,
+ "nn_training_irregular.gif": 65.46082544326782,
+ "training_iterations": 167,
+ "training_final_error": 1.0236886294201497e-07
+}

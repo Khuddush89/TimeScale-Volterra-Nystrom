@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TimeScale-Volterra-Nystrom: gap-aware trapezoidal Nystrom method and two-sided residual bounds for nonlinear Volterra integral equations on time scales"
+version: 3.0.0
+# date-released: set when the repository is made public (upon acceptance)
+license: MIT
+repository-code: "https://github.com/Khuddush89/TimeScale-Volterra-Nystrom"
+url: "https://github.com/Khuddush89/TimeScale-Volterra-Nystrom"
+authors:
+  - family-names: Khuddush
+    given-names: Mahammad
+    orcid: "https://orcid.org/0000-0002-1236-8334"
+    email: "khuddush89@gmail.com"
+    affiliation: "Vignan's Institute of Information Technology (Autonomous), Visakhapatnam; Woxsen University, Hyderabad"
+keywords: [Volterra integral equations, time scales, delta integral, Nystrom method, Peano kernel, a posteriori error bounds]
+preferred-citation:
+  type: unpublished
+  title: "A gap-aware trapezoidal Nystrom method with two-sided residual bounds for nonlinear Volterra integral equations on time scales"
+  authors:
+    - family-names: Khuddush
+      given-names: Mahammad
+      orcid: "https://orcid.org/0000-0002-1236-8334"
+  year: 2026
+  notes: "Manuscript in preparation for submission. Sole author."

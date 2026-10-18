@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsvolterra"
+version = "3.0.0"
+description = "Gap-aware trapezoidal Nystrom method and two-sided residual bounds for nonlinear Volterra integral equations on time scales"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Mahammad Khuddush", email = "khuddush89@gmail.com"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0", "scipy>=1.11", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+neural = ["jax>=0.4.30"]
+experiments = ["jax>=0.4.30", "pandas>=2.0", "sympy>=1.12", "pillow"]
+
+[project.scripts]
+tsvolterra = "tsvolterra.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Khuddush89/TimeScale-Volterra-Nystrom"
+
+[tool.setuptools]
+packages = ["tsvolterra"]

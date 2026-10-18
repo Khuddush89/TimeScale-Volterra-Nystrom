@@ -1,0 +1,29 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-min.txt
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: CLI smoke test
+        run: |
+          python -m tsvolterra.cli scales
+          python -m tsvolterra.cli solve --scale hybrid --h 0.0625 --manufactured
+          python -m tsvolterra.cli converge --scale cantor --levels 4
+      - name: Independent verification (classical part)
+        run: python verification/verify_independent.py

@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+# LaTeX and manuscript material is not part of this repository
+*.tex
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.pdf
+# regenerated output folders (results/ and assets/ are tracked)
+figures/
+tables/
+/tmp/
